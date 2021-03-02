@@ -14,7 +14,7 @@ import lombok.extern.log4j.Log4j;
 @RunWith(SpringJUnit4ClassRunner.class)		//현재 테스트코드가 스프링을 실행하는 역할 이라는 것을 표시
 
 //중요 : ContextConfiguration어노테이션과 속성값인 문자열 설정
-@ContextConfiguration("file:src/main/webapp/WEB-INF/spring/root-context.xml")		//지정된 클래스나 문자열을 이용해서 필요한 객체들을 스프링 내에 객체로 등록하게 된다.
+@ContextConfiguration("file:src/main/webapp/WEB-INF/spring/root-context.xml")		//지정된 클래스나 문자열을 이용해서 필요한 객체들을 스프링 내에 객체로 등록하게 된다.	locations를 이용해서 문자열의배열로 XML설정 파일을 명시하거나, classes속성으로 @Configuration이 적용된 클래스를 지정할 수 있다
 @Log4j		//Lombok을 이용해서 로그를 기록하는 Logger변수 생성 별도의 선언 없이 Log4j라이브러리와 설정이 존재하면 바로 사용 가능
 public class SampleTests {
 	
